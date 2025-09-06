@@ -1,0 +1,130 @@
+/* Background hitam */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://i.pinimg.com/1200x/5d/66/85/5d6685b9121e28a91ee67cf88632cfed.jpg");
+  background-size: cover;         /* Menutupi seluruh layar secara proporsional */
+  background-position: center;    /* Fokus di tengah */
+  background-repeat: no-repeat; 
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.6);
+}
+
+/* Header */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* jarak antar elemen */
+}
+
+.form-group {
+  flex: 1; /* supaya input & date melar */
+  display: flex;
+  gap: 10px;
+}
+
+.form-actions {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"], input[type="date"] {
+  flex: 1;
+  padding: 8px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+/* Button add */
+.button-add {
+  padding: 10px 15px;
+  font-size: 18px;
+  border: none;
+  border-radius: 50%;
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.button-add:hover {
+    background: rgb(216, 216, 13);
+}
+
+/* Action buttons */
+.action-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.filters button,
+.button-delete-all {
+  padding: 6px 12px;
+  margin-right: 5px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  transition: background 0.3s;
+}
+
+.filters .flt-all:hover {
+  background: #3212e7;
+}
+
+.filters .flt-comp:hover {
+  background: #038a25;
+}
+
+.filters .flt-incomp:hover {
+  background: rgb(148, 16, 16);
+}
+
+.button-delete-all:hover {
+    background: rgb(148, 16, 16);
+}
+
+/* Task list */
+#todo-list {
+  margin-top: 15px;
+}
+
+.task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+.task:hover {
+      background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #cdcecc;
+}
+.task.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}

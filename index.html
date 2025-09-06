@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muthia's To-do List</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main class="glass">
+    <header>
+      <h1 class="header">To-do List</h1>
+    </header>
+
+    <form id="todo-form">
+      <div class="form-group">
+        <input type="text" id="todo-input" placeholder="Add a new task here" required> 
+        <input type="date" id="date-input" required>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit" class="button-add">+</button>
+      </div>
+    </form>
+
+    <section>
+      <div class="action-container">
+        <div class="filters">
+          <button type="button" class="flt-all" data-filter="all">All</button>
+          <button type="button" class="flt-comp" data-filter="completed">Completed</button>
+          <button type="button" class="flt-incomp" data-filter="incomplete">Incomplete</button>
+        </div>
+        <button type="button" class="button-delete-all">Delete All</button>
+      </div>
+
+      <header>
+        <h2 class="task-title">Task List</h2>
+      </header>
+
+      <div id="todo-list">
+        <p>No tasks available</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
